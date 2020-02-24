@@ -69,9 +69,9 @@ export class Mic extends Component {
   render() {
     return (
     <div className="container">
-        <nav>
+        {/* <nav>
             <h1>blurbs</h1>
-        </nav>
+        </nav> */}
         <main>
             <div className='button-set'>
                 <button className='rec' onClick={this.start} disabled={this.state.isRecording}>
@@ -87,12 +87,13 @@ export class Mic extends Component {
                 <li key={index}>
                 {snip.blobURL}
                 </li>
-            ))  : <li></li>
+            ))  : <li>hello world</li>
             }
             </ul>
         </main>
         <footer>
             <h4>dj fuzz℗</h4>
+            <button className='submit-snip'><a href="mailto:david.magbee@betterarts.org?subject=Snippet Submission: blurbs">Send to Better Radio</a></button>
         </footer>
       </div>
     );
