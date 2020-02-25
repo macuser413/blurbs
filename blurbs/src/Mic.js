@@ -69,10 +69,17 @@ export class Mic extends Component {
   render() {
     return (
     <div className="container">
+        <div id='deets'>
+            <p>1. Click the Record button to begin recording your snippet.</p>
+            <p>2. Click the Stop button when you've finished recording.</p>
+            <p>3. Click the vertical ellipsis (⋮) to download the file to your device.</p>
+            <p>4. Click on the Submit button to open your device's email client.</p>
+            <p>5. Attach the recently downloaded file, say hello, and hit send!</p>
+        </div>
         <main>
             <div className='button-set'>
                 <button className='rec' onClick={this.start} disabled={this.state.isRecording}>
-                Record
+                Record 
                 </button>
                 <button className='stop' onClick={this.stop} disabled={!this.state.isRecording}>
                 Stop

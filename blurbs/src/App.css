@@ -19,7 +19,6 @@ a:hover, a:active {
 }
 
 h1 {
-  /* color: white; */
   background: #01abaa;
   padding: 5px 20px;
 }
@@ -108,13 +107,38 @@ audio {
 }
 
 .gist {
+  background-color: #FFF;
+  color: #212527;
+  border-radius: 20px;;
+  margin: auto;
   padding: 20px;
+  width: 85vw;
+  height: 25vh;
+  display: block;
+  justify-content: center;
 }
 
-.hello {
+#hello {
+  background-color: #FFF;
+  color: #212527;
+  margin: auto;
   padding: 20px;
-  width: 65vw;
+  width: 85vw;
   height: 50vh;
+  display: block;
+  justify-content: center;
+}
+
+#deets {
+  background-color: #FFF;
+  color: #212527;
+  margin: auto;
+  padding: 15px;
+  border-radius: 20px;;
+  width: 50vw;
+  height: 20vh;
+  display: block;
+  justify-content: center;
 }
 
 h1, h2, p, ul, li {
@@ -149,4 +173,10 @@ ul.header li a {
 .airtime {
   display: flex;
   justify-content: center;
+  margin: 20px 45px;
+  border: solid #212527 5px;
+  border-radius: 20px;
+  background-image: url(https://i.ibb.co/Z8tDCvB/retro-hi-fi.jpg);
+  background-size: cover;
+  background-position: center;
 }

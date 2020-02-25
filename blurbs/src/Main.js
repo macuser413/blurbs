@@ -14,7 +14,7 @@ class Main extends Component {
             <div>
                 <h1><Link to='/'>blurbs</Link></h1>
                 <ul className='header'>
-                    <li><Link to='/Mic'>Rec</Link></li>
+                    <li><Link to='/Mic'>Record</Link></li>
                     <li><Link to='/About'>About</Link></li>
                     <li><a href='/Contact'>Contact</a></li>
                 </ul>
