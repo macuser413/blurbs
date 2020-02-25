@@ -8,6 +8,7 @@ import Main from './Main';
 import Mic from './Mic';
 import Contact from './Contact';
 import About from './About';
+import Home from './Home';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           {/* <Route path='/' component={Mic}></Route>
           <Route path='/About' exact component={About}></Route> */}
           <Main />
+          {/* <Welcome /> */}
           {/* <Mic /> */}
           {/* <Contact /> */}
           {/* <About /> */}

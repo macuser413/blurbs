@@ -1,5 +1,7 @@
+/* App Styling: Overall */
 html, 
 body {
+  background-color: #01abaa;
   margin: auto;
   padding: 0;
   width: 100%;
@@ -7,23 +9,19 @@ body {
   box-sizing: border-box;
 }
 
-.app {
-  margin: auto;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+a:link, a:visited {
+  color: white;
+  text-decoration: white;
 }
 
-nav,
-header {
-  background: slategrey;
-  padding: 10px 0px 0px 10px;
+a:hover, a:active {
+  background-color: #e65632;
 }
 
 h1 {
-  background: slategrey;
-  padding: 20px 20px;
+  /* color: white; */
+  background: #01abaa;
+  padding: 5px 20px;
 }
 
 main {
@@ -31,6 +29,7 @@ main {
 }
 
 footer {
+  position: sticky;
   text-align: center;
 }
 
@@ -38,12 +37,13 @@ audio {
   width: 100%;
   transform: scale(1.02);
   border-radius: 90px;
-  box-shadow: 5px 5px 20px slategrey;
+  box-shadow: 5px 5px 20px #e65632;
   margin: 5px;
 }
 
 .navbar {
   list-style-type: none;
+  display: inline-block;
 }
 
 .current-player {
@@ -53,6 +53,7 @@ audio {
   padding: 15px;
 }
 
+/* App Buttons */
 .button-set {
   margin: auto;
   width: 50%;
@@ -61,24 +62,40 @@ audio {
 }
 
 .rec {
-  background: red;
+  background: #e65632;
+  font-size: 15px;
   color: white;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 10px;
+  border: hidden;
   border-radius: 15px;
   align-content: center;
 }
 
 .stop {
   color: black;
+  font-size: 15px;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 10px;
+  border: hidden;
   border-radius: 15px;
   align-content: center;
 }
 
+.submit-snip {
+  color: black;
+  background-color: #212527;
+  font-size: 15px;
+  margin: 10px;
+  padding: 5px 10px;
+  border: hidden;
+  border-radius: 15px;
+  align-content: center;
+  text-decoration-color: none;
+}
+
+/* App Page Content */
 #snip-list.scroll {
-  border: dotted red 15px;
   list-style-type: none;
   width: 65vw;
   height: 50vh;
@@ -90,7 +107,46 @@ audio {
   overflow: auto;
 }
 
-.submit-snip {
+.gist {
+  padding: 20px;
+}
+
+.hello {
+  padding: 20px;
+  width: 65vw;
+  height: 50vh;
+}
+
+h1, h2, p, ul, li {
+  font-family: sans-serif;
   text-decoration: none;
-  margin: 10px 20px;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #212527;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+/* Miscellaneous Styling Components */
+.airtime {
+  display: flex;
+  justify-content: center;
 }
