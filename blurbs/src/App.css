@@ -109,7 +109,7 @@ audio {
 .gist {
   background-color: #FFF;
   color: #212527;
-  border-radius: 20px;;
+  border-radius: 20px;
   margin: auto;
   padding: 20px;
   width: 85vw;
@@ -121,12 +121,23 @@ audio {
 #hello {
   background-color: #FFF;
   color: #212527;
+  border-radius: 20px;
   margin: auto;
   padding: 20px;
   width: 85vw;
   height: 50vh;
-  display: block;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.connect {
+  background-color: #FFF;
+  margin: 10px;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #deets {
