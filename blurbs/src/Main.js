@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import './App.css';
+import blurbmic from './img/blurbmic.png';
 
 import Mic from './Mic';
 import Contact from './Contact';
@@ -13,6 +14,7 @@ class Main extends Component {
         return (
             <div>
                 <h1><Link to='/'>blurbs</Link></h1>
+                {/* <img id='blurb-mic' src={blurbmic} alt={'blurb-mic'} href=''/> */}
                 <ul className='header'>
                     <li><Link to='/Mic'>Record</Link></li>
                     <li><Link to='/About'>About</Link></li>
